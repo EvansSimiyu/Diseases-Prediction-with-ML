@@ -11,11 +11,11 @@ import numpy as np
 import pandas as pd
 
 #Loading the saved models
-diabetes_model = pickle.load(open('diabetes_model.sav','rb'),errors='ignore',encoding='latin1')
+diabetes_model = pickle.load(open('diabetes_model.sav','rb'))
 
 
-heart_disease_model = pickle.load(open('heart_disease_prediction.sav','rb'),errors='ignore',encoding='latin1')
-parkinsons_disease_model = pickle.load(open('Parkinson_disease_prediction.sav','rb'),errors='ignore',encoding='latin1')
+heart_disease_model = pickle.load(open('heart_disease_prediction.sav','rb'))
+parkinsons_disease_model = pickle.load(open('Parkinson_disease_prediction.sav','rb'))
 
 with st.sidebar:
     #selected = om('Multiple Disease Prediction System',['Diabetes Prediction',
