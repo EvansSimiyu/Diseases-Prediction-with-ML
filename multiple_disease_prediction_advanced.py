@@ -12,12 +12,10 @@ import pandas as pd
 import sklearn
 
 #Loading the saved models
-diabetes_model = pickle.load(open('/home/evans/Multiple_Disease_Prediction/diabetes_model.sav','rb'),errors='ignore',encoding='latin1')
-
-
-heart_disease_model = pickle.load(open('/home/evans/Multiple_Disease_Prediction/diabetes_model.sav','rb'),errors='ignore',encoding='latin1')
-parkinsons_disease_model = pickle.load(open('/home/evans/Multiple_Disease_Prediction/diabetes_model.sav','rb'),errors='ignore',encoding='latin1')
-breast_cancer_model = pickle.load(open('/home/evans/Multiple_Disease_Prediction/Breast_cancer_prediction.sav','rb'),errors='ignore',encoding='latin1')
+diabetes_model = pickle.load(open('diabetes_model.sav','rb'))
+heart_disease_model = pickle.load(open('heart_disease_prediction.sav','rb'))
+parkinsons_disease_model = pickle.load(open('Parkinson_disease_prediction.sav','rb'))
+breast_cancer_model = pickle.load(open('Breast_cancer_prediction.sav','rb'))
 with st.sidebar:
     #selected = om('Multiple Disease Prediction System',['Diabetes Prediction',
                                                                  #eart Disease Prediction',
